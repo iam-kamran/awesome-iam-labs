@@ -16,7 +16,6 @@
   <a href="#start-here">Start here</a> ·
   <a href="#the-library">Explore the library</a> ·
   <a href="#learning-path">Learning path</a> ·
-  <a href="#contribute">Contribute</a>
 </p>
 
 ---
@@ -136,13 +135,9 @@ Some exercises require a licensed tenant, a sandbox, cloud resources or vendor-s
 
 **Evidence matters.** A successful lab should explain what happened and how you verified it.
 
-## Contribute
+## Project status
 
-Contributions and corrections are welcome. Useful additions include new hands-on labs, identity architecture diagrams, IGA examples, platform exercises, interview scenarios and corrections to unclear or outdated material.
-
-Please open an issue before making a large change. For a lab contribution, include the objective, prerequisites, steps, expected result, validation evidence and cleanup instructions. Keep secrets, tenant identifiers and personal data out of screenshots and examples.
-
-See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the contribution checklist.
+This is a personal IAM learning and portfolio repository maintained by its owner. It documents original learning materials, hands-on exercises and technical notes. **External contributions are not being accepted at this time.**
 
 ## Author
 
