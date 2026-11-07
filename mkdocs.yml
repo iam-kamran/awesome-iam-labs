@@ -61,6 +61,10 @@ markdown_extensions:
 extra_css:
   - docs/assets/extra.css
 
+extra_javascript:
+  - https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js
+  - docs/assets/mermaid-init.js
+
 nav:
   - Home: index.md
   - Start Here:
@@ -70,13 +74,17 @@ nav:
       - Microsoft Entra SC-300: 04-Microsoft-Entra-SC300-Master-Guide.md
       - Okta Administrator: 05-Okta-Certified-Administrator-Roadmap.md
       - SailPoint IdentityIQ: 08-SailPoint-IIQ-Enterprise-25-Lab-Roadmap.md
+  - Hands-on Labs:
+      - Lab Hub: docs/labs/README.md
+      - Field Lab Workbook: docs/labs/field-lab-workbook.md
+      - First Responder: 06-IAM-First-Responder-Labs.md
+      - Workload Identity: 07-CICD-Workload-Identity-Labs.md
+      - Graph PowerShell: 10-entra_iam_microsoft_graph_toolkit.md
+  - Architecture:
+      - Identity Flows: docs/architecture/identity-flows.md
+      - Enterprise Patterns: docs/architecture/platform-patterns.md
   - Operations & Engineering:
-      - First Responder Labs: 06-IAM-First-Responder-Labs.md
-      - CI/CD & Workload Identity: 07-CICD-Workload-Identity-Labs.md
       - Entra Portal vs Graph: 09-Entra-Portal-Limitations-vs-PowerShell-Graph.md
-      - Graph PowerShell Toolkit: 10-entra_iam_microsoft_graph_toolkit.md
-  - Architecture Diagrams:
-      - SAML, OIDC & Lifecycle: docs/architecture/identity-flows.md
   - Career:
       - Interview Question Bank: 03-IAM-Interview-Question-Bank.md
   - Contributing: CONTRIBUTING.md
