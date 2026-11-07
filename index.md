@@ -7,7 +7,7 @@
 A practical, vendor-aware learning library for identity foundations, enterprise IAM, Microsoft Entra ID, Okta, SailPoint, identity operations and workload security.
 
 [Start learning](#choose-your-path){ .md-button .md-button--primary }
-[Browse the labs](#explore-the-library){ .md-button }
+[Browse the labs](docs/labs/README.md){ .md-button }
 
 </div>
 
@@ -67,6 +67,7 @@ A practical, vendor-aware learning library for identity foundations, enterprise 
 - [01 — IAM Identity Foundations Workbook](01-IAM-Identity-Foundations-Workbook.md)
 - [02 — Enterprise IAM Lab Curriculum](02-Enterprise-IAM-Lab-Curriculum.md)
 - [03 — IAM Interview Question Bank](03-IAM-Interview-Question-Bank.md)
+- [Architecture diagrams — identity flows and platform patterns](docs/architecture/identity-flows.md)
 
 ### Platform learning
 
@@ -80,6 +81,7 @@ A practical, vendor-aware learning library for identity foundations, enterprise 
 - [07 — CI/CD and Workload Identity Labs](07-CICD-Workload-Identity-Labs.md)
 - [09 — Entra Portal Limitations vs PowerShell and Graph](09-Entra-Portal-Limitations-vs-PowerShell-Graph.md)
 - [10 — Microsoft Graph PowerShell Toolkit](10-entra_iam_microsoft_graph_toolkit.md)
+- [Hands-on lab hub and field workbook](docs/labs/README.md)
 
 ## Learn by doing
 
