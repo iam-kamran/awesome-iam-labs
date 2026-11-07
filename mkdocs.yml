@@ -3,8 +3,8 @@ site_description: Practical identity engineering, from first principles to enter
 site_url: https://iam-kamran.github.io/awesome-iam-labs/
 repo_url: https://github.com/iam-kamran/awesome-iam-labs
 repo_name: iam-kamran/awesome-iam-labs
-edit_uri: edit/main/
-docs_dir: .
+edit_uri: edit/main/docs/
+docs_dir: docs
 site_dir: site
 
 theme:
@@ -59,40 +59,32 @@ markdown_extensions:
       permalink: true
 
 extra_css:
-  - docs/assets/extra.css
+  - assets/extra.css
 
 extra_javascript:
   - https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js
-  - docs/assets/mermaid-init.js
+  - assets/mermaid-init.js
 
 nav:
   - Home: index.md
   - Start Here:
-      - Identity Foundations: 01-IAM-Identity-Foundations-Workbook.md
-      - Enterprise IAM Curriculum: 02-Enterprise-IAM-Lab-Curriculum.md
+      - Identity Foundations: guides/01-IAM-Identity-Foundations-Workbook.md
+      - Enterprise IAM Curriculum: guides/02-Enterprise-IAM-Lab-Curriculum.md
   - Platform Guides:
-      - Microsoft Entra SC-300: 04-Microsoft-Entra-SC300-Master-Guide.md
-      - Okta Administrator: 05-Okta-Certified-Administrator-Roadmap.md
-      - SailPoint IdentityIQ: 08-SailPoint-IIQ-Enterprise-25-Lab-Roadmap.md
+      - Microsoft Entra SC-300: guides/04-Microsoft-Entra-SC300-Master-Guide.md
+      - Okta Administrator: guides/05-Okta-Certified-Administrator-Roadmap.md
+      - SailPoint IdentityIQ: guides/08-SailPoint-IIQ-Enterprise-25-Lab-Roadmap.md
   - Hands-on Labs:
-      - Lab Hub: docs/labs/README.md
-      - Field Lab Workbook: docs/labs/field-lab-workbook.md
-      - First Responder: 06-IAM-First-Responder-Labs.md
-      - Workload Identity: 07-CICD-Workload-Identity-Labs.md
-      - Graph PowerShell: 10-entra_iam_microsoft_graph_toolkit.md
+      - Lab Hub: labs/README.md
+      - Field Lab Workbook: labs/field-lab-workbook.md
+      - First Responder: guides/06-IAM-First-Responder-Labs.md
+      - Workload Identity: guides/07-CICD-Workload-Identity-Labs.md
+      - Graph PowerShell: guides/10-entra_iam_microsoft_graph_toolkit.md
   - Architecture:
-      - Identity Flows: docs/architecture/identity-flows.md
-      - Enterprise Patterns: docs/architecture/platform-patterns.md
+      - Identity Flows: architecture/identity-flows.md
+      - Enterprise Patterns: architecture/platform-patterns.md
   - Operations & Engineering:
-      - Entra Portal vs Graph: 09-Entra-Portal-Limitations-vs-PowerShell-Graph.md
+      - Entra Portal vs Graph: guides/09-Entra-Portal-Limitations-vs-PowerShell-Graph.md
   - Career:
-      - Interview Question Bank: 03-IAM-Interview-Question-Bank.md
-  - Contributing: CONTRIBUTING.md
-
-exclude_docs: |
-  CHANGELOG.md
-  LICENSE
-  README.md
-  mkdocs.yml
-  .github/
-  site/
+      - Interview Question Bank: guides/03-IAM-Interview-Question-Bank.md
+  - Contributing: contributing.md
