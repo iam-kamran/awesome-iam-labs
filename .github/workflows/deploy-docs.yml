@@ -1,0 +1,33 @@
+name: Validate documentation pull requests
+
+on:
+  pull_request:
+    branches:
+      - main
+      - docs/site-refresh
+    paths:
+      - "*.md"
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/deploy-docs.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install documentation dependencies
+        run: pip install mkdocs-material
+
+      - name: Build site
+        run: mkdocs build --strict
