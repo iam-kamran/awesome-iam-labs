@@ -1,0 +1,50 @@
+:root {
+  --md-text-font: "Inter", "Segoe UI", sans-serif;
+  --md-code-font: "JetBrains Mono", "Cascadia Code", monospace;
+}
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0b1020;
+  --md-default-bg-color--light: #111a2e;
+  --md-primary-fg-color: #111a35;
+  --md-accent-fg-color: #67e8f9;
+}
+.md-header {
+  background: linear-gradient(100deg, #101a38 0%, #1e1b4b 55%, #164e63 100%);
+}
+.md-tabs {
+  background: #111a35;
+}
+.hero {
+  margin: 1.5rem 0 2.5rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid rgba(103, 232, 249, .22);
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(ellipse at 85% 15%, rgba(99, 102, 241, .28), transparent 45%),
+    linear-gradient(135deg, rgba(30, 41, 80, .95), rgba(15, 23, 42, .98));
+  box-shadow: 0 18px 55px rgba(0, 0, 0, .2);
+}
+.hero h2 {
+  max-width: 15ch;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+.hero p {
+  max-width: 60ch;
+  font-size: 1.08rem;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .grid.cards > ul > li {
+  border-radius: .9rem;
+  transition: transform .18s ease, border-color .18s ease;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-3px);
+  border-color: var(--md-accent-fg-color);
+}
+.footer-note {
+  text-align: center;
+  opacity: .8;
+  padding: 1.5rem 0 .5rem;
+}
