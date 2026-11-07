@@ -1,6 +1,14 @@
-name: Deploy documentation
+name: Build and deploy documentation
 
 on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "*.md"
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/deploy-docs.yml"
   push:
     branches:
       - main
@@ -39,11 +47,13 @@ jobs:
         run: mkdocs build --strict
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
