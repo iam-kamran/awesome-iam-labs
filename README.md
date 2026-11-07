@@ -1,224 +1,164 @@
-Identity and Access Management (IAM) Vendor-Neutral Labs :
+# Awesome IAM Labs
 
-A comprehensive collection of vendor-neutral Identity and Access Management (IAM) learning resources, hands-on labs, architecture guides, interview preparation materials, security operations runbooks, and modern identity engineering scenarios.
+<p align="center">
+  <strong>Practical identity engineering, from first principles to enterprise operations.</strong>
+  <br />
+  Vendor-neutral foundations • Hands-on labs • Troubleshooting playbooks • Architecture thinking
+</p>
 
-This repository is designed for aspiring IAM Analysts, IAM Administrators, IAM Engineers, Security Analysts, Cloud Engineers, and Identity Architects who want to build strong IAM fundamentals independent of any specific platform.
+<p align="center">
+  <a href="https://github.com/iam-kamran/awesome-iam-labs/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/iam-kamran/awesome-iam-labs?style=for-the-badge&logo=github&color=7c3aed"></a>
+  <a href="https://github.com/iam-kamran/awesome-iam-labs/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/iam-kamran/awesome-iam-labs?style=for-the-badge&logo=github&color=2563eb"></a>
+  <a href="https://github.com/iam-kamran/awesome-iam-labs/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/iam-kamran/awesome-iam-labs?style=for-the-badge&color=0891b2"></a>
+</p>
 
-Learn the Identity concepts first. Learn the tools second.
+<p align="center">
+  <a href="#start-here">Start here</a> ·
+  <a href="#the-library">Explore the library</a> ·
+  <a href="#learning-path">Learning path</a> ·
+  <a href="#contribute">Contribute</a>
+</p>
 
-Repository Objectives
-This repository helps learners build practical skills in:
+---
 
-Authentication & Authorization
-OAuth 2.0 & OpenID Connect (OIDC)
-SAML Federation
-Identity Governance & Administration (IGA)
-Single Sign-On (SSO)
-Zero Trust Architecture
-Conditional Access
-Privileged Access Management (PAM)
-Workload Identity
-AI Agent Identity
-Identity Security Operations
-Incident Response
-Microsoft Entra ID
-Okta Workforce Identity
-SailPoint IdentityIQ
-CyberArk & Delinea
-Multi-Cloud IAM (Azure, AWS, GCP)
-Repository Contents
-01 - IAM Identity Foundations Workbook
-File
+## Welcome
 
-01-IAM-Identity-Foundations-Workbook.md
-Topics:
+Identity and Access Management is easier to understand when you connect the concepts to real systems and real operational problems. This repository is a growing collection of IAM workbooks, enterprise lab scenarios, platform guides, investigation exercises, and interview preparation resources.
 
-Authentication vs Authorization
-OAuth 2.0
-OIDC
-JWT
-SAML
-Federation
-Identity Governance
-Zero Trust
-Access Control Models
-Enterprise Identity Architecture
-02 - Enterprise IAM Lab Curriculum
-File
+It is designed for people learning IAM and practitioners who want to sharpen their engineering and troubleshooting skills across **Microsoft Entra ID, Okta, SailPoint, and modern workload identity**.
 
-02-Enterprise-IAM-Lab-Curriculum.md
-Topics:
+> **Learn the identity model first. Then learn how each platform implements it.**
 
-Microsoft Entra ID
-Identity Governance
-Conditional Access
-Workload Identity
-AI Identity
-Sentinel
-CyberArk
-Delinea
-Okta
-SailPoint
-03 - IAM Interview Question Bank
-File
+## What you will find
 
-03-IAM-Interview-Question-Bank.md
-Includes:
+| Area | Explore |
+|---|---|
+| Identity foundations | Authentication, authorization, federation, OAuth 2.0, OIDC, SAML, tokens and access control |
+| Enterprise IAM | Architecture, lifecycle management, governance, privileged access and Zero Trust |
+| Microsoft Entra ID | SC-300 topics, Conditional Access, PIM, Identity Protection and Graph PowerShell |
+| Okta Workforce Identity | Universal Directory, SSO, MFA, policies, provisioning and administration |
+| Identity operations | Investigation workflows, incident response, access troubleshooting and audit evidence |
+| IGA | SailPoint IdentityIQ, application onboarding, entitlement design and governance |
+| Workload identity | CI/CD federation, managed identities, service principals and AI agent identity |
+| Career preparation | Scenario-based interview questions and certification study material |
 
-Real-world IAM interview questions
-Architecture scenarios
-SAML/OIDC troubleshooting
-Governance scenarios
-Conditional Access designs
-Identity security discussions
-04 - Microsoft Entra SC-300 Master Guide
-File
+## Start here
 
-04-Microsoft-Entra-SC300-Master-Guide.md
-Topics:
+New to IAM? Start with the foundations workbook, then work through the enterprise curriculum. You do not need to know every vendor product before you begin.
 
-Complete SC-300 preparation
-Authentication
-Conditional Access
-Identity Protection
-Workload Identities
-Identity Governance
-PIM
-Lifecycle Workflows
-Exam Labs and References
-05 - Okta Certified Administrator Roadmap
-File
+1. **[Identity Foundations Workbook](./01-IAM-Identity-Foundations-Workbook.md)** — build a reliable mental model of identity, protocols, tokens, authorization and governance.
+2. **[Enterprise IAM Lab Curriculum](./02-Enterprise-IAM-Lab-Curriculum.md)** — apply those concepts to enterprise architecture and practical scenarios.
+3. **[Choose a platform or practice area](#the-library)** — go deeper with Entra, Okta, SailPoint, incident response or workload identity.
+4. **[Test your understanding](./03-IAM-Interview-Question-Bank.md)** — use scenario questions to explain not just what a feature does, but why it matters.
 
-05-Okta-Certified-Administrator-Roadmap.md
-Topics:
+## The library
 
-Universal Directory
-Users & Groups
-Admin Roles
-SAML
-MFA
-Policies
-Active Directory Integration
-Provisioning
-Lifecycle Management
-Troubleshooting
-06 - IAM First Responder Labs
-File
+### Foundations and enterprise architecture
 
-06-IAM-First-Responder-Labs.md
-Topics:
+| Resource | What it covers |
+|---|---|
+| [01 · IAM Identity Foundations Workbook](./01-IAM-Identity-Foundations-Workbook.md) | Authentication vs authorization, OAuth 2.0, OIDC, JWT, SAML, federation, access control, governance and architecture mental models |
+| [02 · Enterprise IAM Lab Curriculum](./02-Enterprise-IAM-Lab-Curriculum.md) | Enterprise-oriented labs across Entra, Okta, IGA, privileged access, Zero Trust and modern identity scenarios |
+| [03 · IAM Interview Question Bank](./03-IAM-Interview-Question-Bank.md) | Technical questions, architecture scenarios, federation troubleshooting, governance and security discussions |
 
-Impossible Travel
-MFA Fatigue
-Credential Stuffing
-Token Theft
-PIM Investigation
-Microsoft Graph Investigations
-Identity Incident Response
-Threat Detection and Containment
-07 - CI/CD and Workload Identity Labs
-File
+### Platform learning
 
-07-CICD-Workload-Identity-Labs.md
-Topics:
+| Resource | What it covers |
+|---|---|
+| [04 · Microsoft Entra SC-300 Master Guide](./04-Microsoft-Entra-SC300-Master-Guide.md) | Authentication, Conditional Access, Identity Protection, PIM, workload identities, governance and exam labs |
+| [05 · Okta Certified Administrator Roadmap](./05-Okta-Certified-Administrator-Roadmap.md) | Universal Directory, users and groups, admin roles, SAML, MFA, policies, AD integration, provisioning and troubleshooting |
+| [08 · SailPoint IdentityIQ Enterprise Lab Roadmap](./08-SailPoint-IIQ-Enterprise-25-Lab-Roadmap.md) | Enterprise IdentityIQ learning and application-governance lab scenarios |
 
-Azure DevOps
-Workload Identity Federation
-Azure Key Vault
-Managed Identities
-IAM as Code
-Entra Agent ID
-AI Agent Governance
-Conditional Access for Workload Identities
-Sentinel Monitoring
-Recommended Learning Path
-If you're new to IAM, follow this order:
+### Operations, automation and modern identity
 
-IAM Identity Foundations Workbook
-Enterprise IAM Lab Curriculum
-Microsoft Entra SC-300 Master Guide
-Okta Administrator Roadmap
-IAM Interview Question Bank
-IAM First Responder Labs
-CI/CD & Workload Identity Labs
-Skills You Will Develop
-✅ Identity Foundations
+| Resource | What it covers |
+|---|---|
+| [06 · IAM First Responder Labs](./06-IAM-First-Responder-Labs.md) | Investigation and response scenarios including risky sign-ins, MFA fatigue, credential attacks, token theft and PIM |
+| [07 · CI/CD and Workload Identity Labs](./07-CICD-Workload-Identity-Labs.md) | Workload identity federation, Azure DevOps, Key Vault, managed identities, IAM as Code and AI agent governance |
+| [09 · Entra Portal Limitations vs PowerShell and Graph](./09-Entra-Portal-Limitations-vs-PowerShell-Graph.md) | Practical portal constraints, Graph-based alternatives and operational observations |
+| [10 · Microsoft Graph PowerShell Toolkit](./10-entra_iam_microsoft_graph_toolkit.md) | A focused set of Graph commands and reusable PowerShell patterns for everyday Entra investigations |
 
-✅ Federation (SAML / OAuth / OIDC)
+## Learning path
 
-✅ Identity Governance
+Use this sequence as a suggested route, not a rigid checklist.
 
-✅ Zero Trust
+```text
+IAM FOUNDATIONS
+      |
+      v
+ENTERPRISE IAM CONCEPTS & LABS
+      |
+      +----------------------+----------------------+
+      |                      |                      |
+      v                      v                      v
+ MICROSOFT ENTRA           OKTA                  SAILPOINT
+      |                      |                      |
+      +----------------------+----------------------+
+                             |
+                             v
+                 OPERATIONS & INVESTIGATION
+                             |
+                             v
+                WORKLOAD / CI-CD IDENTITY
+                             |
+                             v
+                   INTERVIEW PREPARATION
+```
 
-✅ Access Reviews
+**Already working in IAM?** Jump directly to the platform or scenario relevant to your current role, then use the foundations workbook to fill conceptual gaps.
 
-✅ Privileged Access Management
+## How to use the labs
 
-✅ Microsoft Entra ID
+- Read the scenario and identify the identity, resource, trust boundary and expected access.
+- Build or inspect the configuration in a non-production environment.
+- Validate both the expected result and a failure or negative test.
+- Capture the evidence: logs, claims, assignments, policy outcomes or command output.
+- Record the root cause and remediation in your own words.
 
-✅ Okta Workforce Identity
+Some exercises require a licensed tenant, a sandbox, cloud resources or vendor-specific tooling. Check the individual guide before starting and review any costs or prerequisites. Never test destructive changes against production identities or access.
 
-✅ SailPoint IdentityIQ
+## Who this is for
 
-✅ CyberArk Concepts
+- Students and people transitioning into IAM
+- Help desk, systems and cloud administrators moving into identity operations
+- IAM analysts, administrators and engineers
+- Security operations and cloud security practitioners
+- Identity, security and solution architects
+- Professionals preparing for IAM interviews or platform certifications
 
-✅ Incident Response
+## Repository principles
 
-✅ Microsoft Graph Automation
+**Practical over theoretical.** Concepts should connect to observable system behaviour.
 
-✅ Workload Identity Federation
+**Vendor-aware, concept-led.** Understand the identity problem before choosing a product feature.
 
-✅ AI Agent Identity Governance
+**Security first.** Least privilege, strong authentication, governance, auditability and safe testing matter.
 
-✅ Identity Engineering
+**Evidence matters.** A successful lab should explain what happened and how you verified it.
 
-Target Audience
-Students
-Help Desk Professionals
-System Administrators
-IAM Analysts
-IAM Administrators
-Security Analysts
-Cloud Engineers
-IAM Engineers
-IAM Architects
-Security Architects
-Repository Principles
-Vendor Neutral
-Security First
-Zero Trust Focused
-Hands-On Learning
-Architecture Driven
-Real Enterprise Scenarios
-Practical Over Theoretical
-Contributing
-Contributions are welcome.
+## Contribute
 
-You can contribute:
+Contributions and corrections are welcome. Useful additions include new hands-on labs, identity architecture diagrams, IGA examples, platform exercises, interview scenarios and corrections to unclear or outdated material.
 
-New IAM Labs
-Identity Governance Scenarios
-Interview Questions
-Security Investigation Playbooks
-Workload Identity Examples
-AI Identity Governance Use Cases
-Architecture Diagrams
-Author
-Kamran Arif
-IAM Architect | Identity Governance | Zero Trust | Multi-Cloud Security | Identity Engineering
+Please open an issue before making a large change. For a lab contribution, include the objective, prerequisites, steps, expected result, validation evidence and cleanup instructions. Keep secrets, tenant identifiers and personal data out of screenshots and examples.
 
-LinkedIn
-https://www.linkedin.com/in/karifa/
+See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for the contribution checklist.
 
-GitHub
-[https://github.com/iam-kamran](https://github.com/iam-kamran)
+## Author
 
-Disclaimer
-This repository is intended for educational and research purposes only.
+**Kamran Arif**  
+IAM Architecture · Identity Governance · Zero Trust · Multi-cloud Identity Engineering
 
-Always validate configurations, security controls, role assignments, identity governance policies, and automation code before using them in production environments.
+- [LinkedIn](https://www.linkedin.com/in/karifa/)
+- [GitHub](https://github.com/iam-kamran)
 
-The content reflects vendor-neutral IAM concepts and practical learning exercises designed to help professionals understand identity security principles across multiple platforms.
+## Disclaimer
 
-Remember
-The right person gets the right access to the right resource for the right reason at the right time.
+This repository is provided for educational and research purposes. Product capabilities, licensing, APIs and portal experiences can change. Validate guidance against current vendor documentation and test all configurations and scripts in an appropriately isolated environment before adapting them for production. Examples are not a substitute for your organization's security, change-management or compliance requirements.
+
+---
+
+<p align="center">
+  <strong>The goal of IAM:</strong><br />
+  The right identity gets the right access to the right resource, for the right reason, at the right time.
+</p>
