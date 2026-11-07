@@ -8,6 +8,7 @@ A practical, vendor-aware learning library for identity foundations, enterprise 
 
 [Start learning](#choose-your-path){ .md-button .md-button--primary }
 [Browse the labs](labs/README.md){ .md-button }
+[Follow on LinkedIn](https://www.linkedin.com/in/karifa/){ .md-button }
 
 </div>
 
@@ -102,4 +103,4 @@ Found an issue, learned something useful, or want to contribute a lab? Start wit
 
 ---
 
-<p class="footer-note">Maintained by <a href="https://github.com/iam-kamran">Kamran Arif</a> · Learn the identity model first. Learn the tools second.</p>
+<p class="footer-note">Maintained by <a href="https://github.com/iam-kamran">Kamran Arif</a> · <a href="https://www.linkedin.com/in/karifa/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a> · Learn the identity model first. Learn the tools second.</p>
