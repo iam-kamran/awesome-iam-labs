@@ -4,7 +4,7 @@ These reference patterns show common trust boundaries and responsibilities. They
 
 ## Microsoft Entra ID with hybrid Active Directory
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
     HR[HR / authoritative source] -->|Identity data| AD[On-premises Active Directory]
     AD -->|Password hash sync or supported auth path| Sync[Entra Connect Sync / Cloud Sync]
@@ -13,7 +13,7 @@ flowchart LR
     Tenant --> Cloud[Azure resources]
     Admin[Privileged administrators] -->|PIM / MFA / Conditional Access| Tenant
     Workload[Workload identity] -->|Federated credential / managed identity| Tenant
-\`\`\`
+```
 
 **Design responsibilities**
 
@@ -29,7 +29,7 @@ flowchart LR
 
 ## Okta Workforce Identity with Active Directory integration
 
-\`\`\`mermaid
+```mermaid
 flowchart LR
     AD[Active Directory forest / domains] --> Agent[Okta AD Agent group]
     Agent -->|Outbound secure connectivity| Okta[Okta Universal Directory]
@@ -38,7 +38,7 @@ flowchart LR
     Okta --> Provision[Provisioning connectors]
     Provision --> SaaS[Downstream applications]
     User[Workforce user] --> Okta
-\`\`\`
+```
 
 **Design responsibilities**
 
@@ -51,7 +51,7 @@ flowchart LR
 
 ## SailPoint IdentityIQ application onboarding
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
     Source[Authoritative identity source] --> Identity[IdentityIQ identity cube]
     AppOwner[Application owner] --> Model[Application and entitlement model]
@@ -62,7 +62,7 @@ flowchart TD
     Provision --> Target[Target application]
     Target --> Aggregation[Aggregation and reconciliation]
     Aggregation --> Governance[Certification, audit and reporting]
-\`\`\`
+```
 
 **Application onboarding work products**
 
@@ -75,7 +75,7 @@ flowchart TD
 
 ## Generic access request and provisioning lifecycle
 
-\`\`\`mermaid
+```mermaid
 sequenceDiagram
     autonumber
     actor Employee
@@ -94,13 +94,13 @@ sequenceDiagram
     Connector-->>Portal: Provisioning status
     Portal->>Portal: Record evidence and reconcile
     Portal-->>Employee: Notify outcome
-\`\`\`
+```
 
 **Control points:** requester identity, entitlement owner, approval separation, policy evaluation, connector execution identity, target-side result, retry/dead-letter handling and evidence retention.
 
 ## SSO troubleshooting decision path
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
     Start[User reports application access failure] --> Reach{Can user reach IdP?}
     Reach -->|No| Net[Check DNS, network, proxy and app URL]
@@ -113,7 +113,7 @@ flowchart TD
     Protocol -->|Yes| Session{Did application create a session?}
     Session -->|No| AppLog[Inspect SP / application logs and token validation]
     Session -->|Yes| Done[Check in-app authorization and resource permissions]
-\`\`\`
+```
 
 Do not jump directly to changing configuration. Capture the transaction evidence first and isolate the failing boundary.
 
