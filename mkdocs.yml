@@ -92,6 +92,7 @@ nav:
 exclude_docs: |
   CHANGELOG.md
   LICENSE
+  README.md
   mkdocs.yml
   .github/
   site/
