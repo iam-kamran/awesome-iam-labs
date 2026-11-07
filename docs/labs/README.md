@@ -11,7 +11,7 @@ Use this page as the practical entry point. Each exercise should produce evidenc
 | Okta administration | Directory, group, app assignment, policy and provisioning checks | Lab 03 |
 | IGA / SailPoint | Application onboarding, entitlement modelling and provisioning design | Lab 04 |
 | Active Directory integration | Directory agent, sync, connectivity and lifecycle architecture | Lab 05 |
-| Workload identity | Secretless authentication and federated trust | Existing [CI/CD and Workload Identity Labs](../../07-CICD-Workload-Identity-Labs.md) |
+| Workload identity | Secretless authentication and federated trust | Existing [CI/CD and Workload Identity Labs](../guides/07-CICD-Workload-Identity-Labs.md) |
 
 ## Lab standards
 
