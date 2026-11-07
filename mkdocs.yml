@@ -75,6 +75,8 @@ nav:
       - CI/CD & Workload Identity: 07-CICD-Workload-Identity-Labs.md
       - Entra Portal vs Graph: 09-Entra-Portal-Limitations-vs-PowerShell-Graph.md
       - Graph PowerShell Toolkit: 10-entra_iam_microsoft_graph_toolkit.md
+  - Architecture Diagrams:
+      - SAML, OIDC & Lifecycle: docs/architecture/identity-flows.md
   - Career:
       - Interview Question Bank: 03-IAM-Interview-Question-Bank.md
   - Contributing: CONTRIBUTING.md
