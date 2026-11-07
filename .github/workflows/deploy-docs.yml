@@ -1,7 +1,16 @@
-name: Validate documentation pull requests
+name: Build and deploy documentation
 
 on:
   pull_request:
+    branches:
+      - main
+      - docs/site-refresh
+    paths:
+      - "*.md"
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/deploy-docs.yml"
+  push:
     branches:
       - main
     paths:
@@ -9,9 +18,16 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - ".github/workflows/deploy-docs.yml"
+  workflow_dispatch:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -29,9 +45,22 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Build site
-        run: |
-          if [ -f mkdocs.yml ]; then
-            mkdocs build --strict
-          else
-            echo "MkDocs configuration is introduced by the documentation portal change; skipping site build for this repository-only update."
-          fi
+        run: mkdocs build --strict
+
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
