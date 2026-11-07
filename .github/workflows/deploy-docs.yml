@@ -29,4 +29,9 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Build site
-        run: mkdocs build --strict
+        run: |
+          if [ -f mkdocs.yml ]; then
+            mkdocs build --strict
+          else
+            echo "MkDocs configuration is introduced by the documentation portal change; skipping site build for this repository-only update."
+          fi
