@@ -18,23 +18,23 @@ This workbook is designed around realistic IAM tasks. Complete the investigation
 
 **Useful command pattern**
 
-\`\`\`powershell
+```powershell
 Connect-MgGraph -Scopes "User.Read.All", "GroupMember.Read.All"
 Get-MgContext
 
-$user = Get-MgUser -UserId "test.user@contoso.com" \`
+$user = Get-MgUser -UserId "test.user@contoso.com" `
     -Property Id,DisplayName,UserPrincipalName,AccountEnabled
 
 $user | Select-Object Id, DisplayName, UserPrincipalName, AccountEnabled
 
 Get-MgUserMemberOf -UserId $user.Id
-\`\`\`
+```
 
 Replace the example UPN with a test identity. Permissions and available properties depend on tenant policy and Graph module version. Discover properties when needed with:
 
-\`\`\`powershell
+```powershell
 <Graph-Command> | Get-Member -MemberType Property
-\`\`\`
+```
 
 **Expected outcome:** You can state whether the account is enabled and identify its direct memberships. You do not claim that group membership alone proves successful SSO or application authorization.
 
