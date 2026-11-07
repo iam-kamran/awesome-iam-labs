@@ -13,6 +13,16 @@ Use this page as the practical entry point. Each exercise should produce evidenc
 | Active Directory integration | Directory agent, sync, connectivity and lifecycle architecture | Lab 05 |
 | Workload identity | Secretless authentication and federated trust | Existing [CI/CD and Workload Identity Labs](../guides/07-CICD-Workload-Identity-Labs.md) |
 
+## Downloadable practice datasets
+
+### IPL cricket — Microsoft Entra ID IAM mapping
+
+A sample Excel workbook that uses IPL cricket teams to illustrate identity and access management concepts. It includes an IAM mapping guide and individual team worksheets for exploring group naming, identity attributes and access modelling.
+
+**[Download the IPL → Entra ID IAM dataset (.xlsx)](../assets/datasets/ipl-entra-iam-mapping.xlsx)**
+
+Use the workbook as illustrative lab data, not as production-ready tenant configuration. Team identities and domains in the workbook are examples.
+
 ## Lab standards
 
 Every lab follows the same evidence-driven loop:
