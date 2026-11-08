@@ -48,3 +48,46 @@
   opacity: .8;
   padding: 1.5rem 0 .5rem;
 }
+
+/* Homepage hero calls to action */
+.hero .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.1rem;
+  margin: .35rem .35rem .35rem 0;
+  padding: 0 1.35rem;
+  border: 1px solid #8292ff;
+  border-radius: .55rem;
+  background: transparent;
+  color: #f8fafc !important;
+  font-weight: 700;
+  line-height: 1.2;
+  opacity: 1;
+  text-decoration: none;
+  transition: background-color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.hero .md-button:hover {
+  background: rgba(129, 140, 248, .18);
+  border-color: #a5b4fc;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+.hero .md-button--primary {
+  background: #465bd8;
+  border-color: #6478f0;
+  color: #fff !important;
+}
+.hero .md-button--primary:hover {
+  background: #3549c5;
+  border-color: #8b9aff;
+}
+.hero .md-button.linkedin-button {
+  background: #0a66c2;
+  border-color: #0a66c2;
+  color: #fff !important;
+}
+.hero .md-button.linkedin-button:hover {
+  background: #084f96;
+  border-color: #4a9be8;
+}
