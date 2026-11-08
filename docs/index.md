@@ -8,7 +8,7 @@ A practical, vendor-aware learning library for identity foundations, enterprise 
 
 [Start learning](#choose-your-path){ .md-button .md-button--primary }
 [Browse the labs](labs/README.md){ .md-button }
-[Follow on LinkedIn](https://www.linkedin.com/in/karifa/){ .md-button }
+[Follow on LinkedIn](https://www.linkedin.com/in/karifa/){ .md-button .linkedin-button }
 
 </div>
 
